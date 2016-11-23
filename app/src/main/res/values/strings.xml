@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">仿亲子游</string>
+    <string name="main_tab_home_textname">首页</string>
+    <string name="main_tab_mine_textname">我的</string>
+    <string name="main_tab_recommend_textname">推荐</string>
+    <string name="main_tab_notification_textname">消息</string>
+    <!-- 我的 -->
+    <string name="mine_please_login">请登录</string>
+    <string name="mine_avatar_sex_male">潮爸</string>
+    <string name="mine_avatar_age_number">99岁</string>
+    <string name="mine_indent_name">我的订单</string>
+    <string name="mine_all_indent_name">查看全部订单</string>
+    <string name="mine_tab_text_one">待付款</string>
+    <string name="mine_tab_text_two">未出行</string>
+    <string name="mine_tab_text_three">待评价</string>
+    <string name="mine_tab_text_four">已完成</string>
+    <string name="coupon">优惠券</string>
+    <string name="mine_total">我的积分</string>
+    <string name="mine_account_balance">帐户余额</string>
+    <string name="mine_item_collect">我的收藏</string>
+    <string name="mine_item_traveler">常用出行人</string>
+    <string name="mine_item_share_gift_value">邀请好友注册，送30积分！</string>
+    <string name="mine_item_share_gift">邀请有礼</string>
+    <string name="mine_item_reputation_value">给5星好评，送10元返现</string>
+    <string name="mine_item_reputation">好评有礼</string>
+    <string name="mine_item_cooperation">业务合作</string>
+    <string name="mine_item_clean_cache">清空缓存</string>
+    <string name="mine_item_clean_cache_value">0 MB</string>
+    <string name="mine_item_update_value">4.0.2</string>
+    <string name="mine_item_update">检查更新</string>
+    <string name="mine_item_about">关于麦淘</string>
+    <string name="exit_user">退出</string>
+    <string name="main_mine_title_name">个人中心</string>
+    <string name="notification_mine_title_name">消息中心</string>
+    <string name="notification_message">消息</string>
+    <string name="notification_inform">通知</string>
+    <string name="notification_message_no_result">暂无消息</string>
+    <string name="notification_inform_no_result">暂无通知</string>
+    <string name="nian_mine_title_name">年卡用户专区</string>
+    <string name="nain_tab2_shanghai">上海</string>
+    <string name="nain_tab2_nanjing">南京</string>
+    <string name="nain_tab2_hangzhou">杭州</string>
+    <string name="nain_tab2_beijing">北京</string>
+    <string name="nain_tab2_wuxi">无锡</string>
+</resources>

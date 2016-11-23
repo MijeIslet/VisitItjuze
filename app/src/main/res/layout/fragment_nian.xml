@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@color/title_bar"
+        android:padding="@dimen/title_padding">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:text="@string/nian_mine_title_name"
+            android:textColor="@color/write"
+            android:textSize="@dimen/title_name_size" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/nian_tab2_height"
+        android:background="@color/write"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="@dimen/include_zero"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:enabled="false"
+            android:minHeight="@dimen/include_zero"
+            android:minWidth="@dimen/include_zero"
+            android:text="@string/nain_tab2_shanghai"
+            android:textSize="@dimen/nian_tab2_textsize"
+            android:textStyle="bold" />
+
+        <Button
+            android:layout_width="@dimen/include_zero"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:minHeight="@dimen/include_zero"
+            android:minWidth="@dimen/include_zero"
+            android:text="@string/nain_tab2_nanjing"
+            android:textSize="@dimen/nian_tab2_textsize"
+            android:textStyle="bold" />
+
+        <Button
+            android:layout_width="@dimen/include_zero"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:minHeight="@dimen/include_zero"
+            android:minWidth="@dimen/include_zero"
+            android:text="@string/nain_tab2_hangzhou"
+            android:textSize="@dimen/nian_tab2_textsize"
+            android:textStyle="bold" />
+
+        <Button
+            android:layout_width="@dimen/include_zero"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:minHeight="@dimen/include_zero"
+            android:minWidth="@dimen/include_zero"
+            android:text="@string/nain_tab2_beijing"
+            android:textSize="@dimen/nian_tab2_textsize"
+            android:textStyle="bold" />
+
+        <Button
+            android:layout_width="@dimen/include_zero"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:minHeight="@dimen/include_zero"
+            android:minWidth="@dimen/include_zero"
+            android:text="@string/nain_tab2_wuxi"
+            android:textSize="@dimen/nian_tab2_textsize"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/nian_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

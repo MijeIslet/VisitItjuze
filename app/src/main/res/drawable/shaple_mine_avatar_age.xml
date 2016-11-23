@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners
+        android:bottomRightRadius="@dimen/mine_avatar_tv_radius"
+        android:topRightRadius="@dimen/mine_avatar_tv_radius"></corners>
+    <solid android:color="@color/mine_avatar_age_bg"></solid>
+</shape>

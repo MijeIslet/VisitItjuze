@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cn.zjm.visit.itjuzi.com.MainActivity">
+
+    <FrameLayout
+        android:id="@+id/main_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/main_tab_title"
+        android:layout_marginBottom="@dimen/main_tab_line">
+
+    </FrameLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/main_tab_line"
+        android:layout_above="@+id/main_tab_title"
+        android:alpha="0.5"
+        android:scaleType="fitXY"
+        android:src="@drawable/line_title_bar_bottom" />
+
+
+    <LinearLayout
+        android:id="@+id/main_tab_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/include_height"
+        android:layout_alignParentBottom="true"
+        android:background="@color/main_tab_bg"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="@dimen/include_zero"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/main_tab_inside_liear_padding"
+            android:paddingTop="@dimen/main_tab_inside_liear_padding">
+
+            <ImageButton
+                android:id="@+id/main_iv_home"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/include_zero"
+                android:layout_weight="2"
+                android:background="@null"
+                android:minHeight="@dimen/include_zero"
+                android:minWidth="@dimen/include_zero"
+                android:padding="@dimen/main_tab_image_padding"
+                android:scaleType="centerInside"
+                android:soundEffectsEnabled="false"
+                android:src="@drawable/main_tab_home_on" />
+
+            <Button
+                android:id="@+id/main_tv_home"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/include_zero"
+                android:layout_marginBottom="@dimen/main_tab_tv_padding"
+                android:layout_weight="1"
+                android:background="@null"
+                android:enabled="false"
+                android:gravity="center"
+                android:minHeight="@dimen/include_zero"
+                android:minWidth="@dimen/include_zero"
+                android:text="@string/main_tab_home_textname"
+                android:textColor="@color/main_text_color_on"
+                android:textSize="@dimen/main_tab_tv_size" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/include_zero"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/main_tab_inside_liear_padding"
+            android:paddingTop="@dimen/main_tab_inside_liear_padding">
+
+            <ImageButton
+                android:id="@+id/main_iv_recommend"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/include_zero"
+                android:layout_weight="2"
+                android:background="@null"
+                android:minHeight="@dimen/include_zero"
+                android:minWidth="@dimen/include_zero"
+                android:padding="@dimen/main_tab_image_padding"
+                android:scaleType="centerInside"
+                android:src="@drawable/main_tab_recommend_off" />
+
+            <Button
+                android:id="@+id/main_tv_recommend"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/include_zero"
+                android:layout_marginBottom="@dimen/main_tab_tv_padding"
+                android:layout_weight="1"
+                android:background="@null"
+                android:gravity="center"
+                android:minHeight="@dimen/include_zero"
+                android:minWidth="@dimen/include_zero"
+                android:text="@string/main_tab_recommend_textname"
+                android:textColor="@color/main_text_color_off"
+                android:textSize="@dimen/main_tab_tv_size" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/include_zero"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/main_tab_inside_liear_padding"
+            android:paddingTop="@dimen/main_tab_inside_liear_padding">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/include_zero"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:minHeight="@dimen/include_zero"
+            android:minWidth="@dimen/include_zero"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/main_tab_inside_liear_padding"
+            android:paddingTop="@dimen/main_tab_inside_liear_padding">
+
+            <ImageButton
+                android:id="@+id/main_iv_notification"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/include_zero"
+                android:layout_weight="2"
+                android:background="@null"
+                android:minHeight="@dimen/include_zero"
+                android:minWidth="@dimen/include_zero"
+                android:padding="@dimen/main_tab_image_padding"
+                android:scaleType="centerInside"
+                android:src="@drawable/main_tab_notification_off" />
+
+            <Button
+                android:id="@+id/main_tv_notification"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/include_zero"
+                android:layout_marginBottom="@dimen/main_tab_tv_padding"
+                android:layout_weight="1"
+                android:background="@null"
+                android:gravity="center"
+                android:minHeight="@dimen/include_zero"
+                android:minWidth="@dimen/include_zero"
+                android:text="@string/main_tab_notification_textname"
+                android:textColor="@color/main_text_color_off"
+                android:textSize="@dimen/main_tab_tv_size" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/include_zero"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/main_tab_inside_liear_padding"
+            android:paddingTop="@dimen/main_tab_inside_liear_padding">
+
+            <ImageButton
+                android:id="@+id/main_iv_mine"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/include_zero"
+                android:layout_weight="2"
+                android:background="@null"
+                android:minHeight="@dimen/include_zero"
+                android:minWidth="@dimen/include_zero"
+                android:padding="@dimen/main_tab_image_padding"
+                android:scaleType="centerInside"
+                android:src="@drawable/main_tab_mine_off" />
+
+            <Button
+                android:id="@+id/main_tv_mine"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/include_zero"
+                android:layout_marginBottom="@dimen/main_tab_tv_padding"
+                android:layout_weight="1"
+                android:background="@null"
+                android:gravity="center"
+                android:minHeight="@dimen/include_zero"
+                android:minWidth="@dimen/include_zero"
+                android:text="@string/main_tab_mine_textname"
+                android:textColor="@color/main_text_color_off"
+                android:textSize="@dimen/main_tab_tv_size" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/main_iv_nian"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/main_tab_nian_height"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/main_tab_nian_margin"
+        android:background="@null"
+        android:minHeight="@dimen/include_zero"
+        android:minWidth="@dimen/include_zero"
+        android:scaleType="centerInside"
+        android:src="@drawable/main_tab_nian_card_off" />
+
+</RelativeLayout>

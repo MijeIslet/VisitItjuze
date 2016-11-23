@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/write"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@color/title_bar"
+        android:padding="@dimen/title_padding">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:text="@string/notification_mine_title_name"
+            android:textColor="@color/write"
+            android:textSize="@dimen/title_name_size" />
+
+    </RelativeLayout>
+
+    <RadioGroup
+        android:id="@+id/notification_radiogroup"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/include_height"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:layout_width="@dimen/include_zero"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selecter_notification_mune"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/notification_message" />
+
+        <RadioButton
+            android:layout_width="@dimen/include_zero"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selecter_notification_mune"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/notification_inform" />
+
+    </RadioGroup>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/notification_message"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ListView
+                android:id="@+id/notification_message_listview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></ListView>
+
+            <RelativeLayout
+                android:id="@+id/notification_message_no_result_rl"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="@dimen/no_result_hw"
+                        android:layout_height="@dimen/no_result_hw"
+                        android:layout_margin="@dimen/no_result_margin"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/no_result" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/notification_message_no_result"
+                        android:textSize="@dimen/title_name_size" />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/notification_inform"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="invisible">
+
+            <ListView
+                android:id="@+id/notification_inform_listview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></ListView>
+
+            <RelativeLayout
+                android:id="@+id/notification_inform_no_result_rl"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="@dimen/no_result_hw"
+                        android:layout_height="@dimen/no_result_hw"
+                        android:layout_margin="@dimen/no_result_margin"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/no_result" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/notification_inform_no_result"
+                        android:textSize="@dimen/title_name_size" />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</LinearLayout>
