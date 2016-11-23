@@ -132,7 +132,7 @@ public class FragmentMine extends Fragment implements View.OnClickListener, View
         mineItemReputation = (RelativeLayout) view.findViewById(R.id.mine_item_reputation);
         ivMineReputation = (ImageView) view.findViewById(R.id.iv_mine_reputation);
         mineItemReputationValue = (TextView) view.findViewById(R.id.mine_item_reputation_value);
-//         ivEmIndentReputation = (ImageView) view.findViewById(R.id.iv_em_indent_reputation);
+        ivEmIndentReputation = (ImageView) view.findViewById(R.id.iv_em_indent_reputation);
 
         mineItemCooperation = (RelativeLayout) view.findViewById(R.id.mine_item_cooperation);
         ivMineCooperation = (ImageView) view.findViewById(R.id.iv_mine_cooperation);
